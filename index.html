@@ -158,10 +158,59 @@ footer{background:var(--ftr);color:#c9ced8;padding:34px 0} footer .wm{color:#fff
 .fnd[open] .fmore{visibility:hidden}
 @media(max-width:700px){.fnd .fmore{display:none}}
 @media(max-width:900px){.kpis{grid-template-columns:repeat(2,1fr)}.hero{grid-template-columns:1fr}.hero img{width:150px;height:150px}}
+
+/* ---- mobile flow (rev 7) ---- */
+@media(max-width:640px){
+ body{font-size:16px;line-height:1.6}
+ .wrap{padding:0 18px}
+ .hdr .top{flex-direction:column;align-items:center;text-align:center;gap:6px;padding:12px 0 8px}
+ .hdr-r{text-align:center}
+ .hero{grid-template-columns:1fr;gap:18px;justify-items:center;text-align:center;padding:26px 0 24px}
+ .hero img{width:150px;height:150px}
+ .eyebrow{margin-bottom:8px}
+ h1{font-size:clamp(34px,10vw,44px);text-wrap:balance}
+ h1 small{font-size:17px;text-wrap:balance}
+ .rule{margin:14px auto 16px}
+ .legal{text-align:left;font-size:13.5px}
+ .finding{margin-top:22px;padding:18px 18px}
+ .finding p{font-size:18px;line-height:1.45}
+ .finding .n{font-size:13px}
+ .kpis{grid-template-columns:1fr!important;margin-top:22px}
+ .kpi{border-left:0!important;border-top:1px solid var(--line);padding:16px 4px}
+ .kpi:first-child{border-top:0}
+ .kpi .l{min-height:0}
+ .kpi .v{font-size:38px;margin:6px 0 4px}
+ h2{font-size:26px;text-wrap:balance}
+ .grid2{grid-template-columns:1fr;gap:18px;margin-top:26px}
+ .card{padding:16px 16px}
+ .card h3{font-size:19px}
+ .tblwrap{overflow:visible;border:0;border-radius:0}
+ table.stack{min-width:0}
+ table.stack thead{display:none}
+ table.stack tr{display:block;border:1px solid var(--line);border-radius:5px;background:#fff;margin-bottom:10px;padding:6px 0}
+ table.stack td{display:block;border-bottom:0;padding:8px 14px;font-size:14px}
+ table.stack td[data-label]:before{content:attr(data-label);display:block;font:700 9px/1.4 "Manrope",sans-serif;letter-spacing:.18em;text-transform:uppercase;color:var(--sub);margin-bottom:3px}
+ table.stack td[colspan]{border-top:1px solid var(--line);margin-top:4px;padding-top:10px}
+ .tools{flex-direction:column;align-items:flex-start!important;gap:10px}
+ .acc>.ah{grid-template-columns:auto 1fr auto;gap:10px;padding:14px 14px}
+ .acc>.ah .fh{font-size:15px;line-height:1.35}
+ .acc>.ab{padding:12px 14px 14px}
+ .acc>.ab p{font-size:14px!important}
+ ol.plan>li{padding:0 0 20px 40px;margin-bottom:20px}
+ ol.plan>li:before{font-size:26px}
+ ol.plan h3{font-size:19px;line-height:1.25}
+ ol.plan p{font-size:14.5px}
+ .joinlinks{display:flex;flex-direction:column;gap:8px}
+ .joinlinks a{display:block;text-align:center;padding:12px 14px}
+ .sm{font-size:13px}
+ .note{padding:14px 16px;font-size:13px}
+ svg[aria-label^="Cumulative"]{min-height:180px}
+}
+@media(max-width:400px){h1{font-size:32px} .hero img{width:130px;height:130px} .kpi .v{font-size:34px}}
 </style></head><body>
 <header class=hdr><div class="wrap top">
 <div><div class=wm>KEYMAN</div><div class=wm-sub>Publishing Administration</div></div>
-<div class=hdr-r>Rights Gap Analysis<br><span class=badge>Draft &middot; 2026-09-08 &middot; rev 6</span></div>
+<div class=hdr-r>Rights Gap Analysis<br><span class=badge>Draft &middot; 2026-09-08 &middot; rev 7</span></div>
 </div></header>
 <main class=wrap>
 <section class=panel style="display:block">
@@ -186,37 +235,37 @@ footer{background:var(--ftr);color:#c9ced8;padding:34px 0} footer .wm{color:#fff
 
 <h2 style="margin-top:44px">Registry ledger</h2><div class=rule></div>
 <p class=sub style="max-width:760px">One line per registry, following the three-layer reading: a society lists who wrote the song, The MLC records who is on file to be paid, and only an account statement shows money.</p>
-<div class=tblwrap><table id=tbl><thead><tr><th>Registry</th><th>Status</th><th>What is on file</th><th>Link</th></tr></thead><tbody>
-<tr data-t="mlc" data-s="partial"><td><b>The MLC</b> (U.S. mechanicals)</td><td><span class="pill amber">Partially claimed</span></td><td>Work <b>ELLA ME LLAMA</b>, song code EC7XZB. Writers: Edwin Rosa Vazquez (IPI 00489835584) and Francisco Vargas (no IPI). Publisher Real G 4 Life Inc, administered by Cinq Songs, 50%. Total known shares 50%. Matched recordings: 0. ISWC: none.</td><td><a href="https://portal.themlc.com/catalog/work/1118313231" target=_blank rel=noopener>MLC work</a></td></tr>
-<tr data-t="gmr" data-s="none"><td><b>Global Music Rights</b> (performance)</td><td><span class="pill grey">Not represented</span></td><td>No work matched by exact title, songwriter (Chocolate Blanco) or performer (Chocolate Blanco, Ñengo Flow). GMR is invitation-only; absence here is expected and is not a gap.</td><td><a href="https://globalmusicrights.com/search" target=_blank rel=noopener>GMR search</a></td></tr>
-<tr data-t="songview" data-s="pending"><td><b>BMI Songview</b> (BMI + ASCAP performance)</td><td><span class="pill red">Not registered</span></td><td>Title search returns 80 works called Ella Me Llama; none lists Rosa Vazquez, Vargas, Chocolate Blanco or Ñengo Flow. Title plus writer (VAZQUEZ EDWIN ROSA, IPI 489835584) and title plus performer (both artists) each return 0. Chocolate Blanco does appear on other works there — as VARGAS FRANCISCO, affiliation NS, IPI 0 on "Hablame Claro" (BMI 59776913, alongside an SCD writer) and as BLANCO CHOCOLATE, NS, IPI 00000000000 on "Mejor Que Ayer" (ASCAP 25% via CD Baby) — which confirms he holds no U.S. society seat under either name.</td><td><a href="https://repertoire.bmi.com/" target=_blank rel=noopener>Songview</a></td></tr>
-<tr data-t="scd" data-s="pending"><td><b>SCD</b> (Chile, home society)</td><td><span class="pill blue">Not checked</span></td><td>Chocolate Blanco is a Chilean writer, and his BMI co-writer on "Hablame Claro" is an SCD member, so SCD is the likely home society if he has one. SCD data is not visible through U.S. registries; confirmation comes from the writer directly.</td><td>—</td></tr>
+<div class=tblwrap><table class=stack id=tbl><thead><tr><th>Registry</th><th>Status</th><th>What is on file</th><th>Link</th></tr></thead><tbody>
+<tr data-t="mlc" data-s="partial"><td data-label="Registry"><b>The MLC</b> (U.S. mechanicals)</td><td data-label="Status"><span class="pill amber">Partially claimed</span></td><td data-label="What is on file">Work <b>ELLA ME LLAMA</b>, song code EC7XZB. Writers: Edwin Rosa Vazquez (IPI 00489835584) and Francisco Vargas (no IPI). Publisher Real G 4 Life Inc, administered by Cinq Songs, 50%. Total known shares 50%. Matched recordings: 0. ISWC: none.</td><td data-label="Link"><a href="https://portal.themlc.com/catalog/work/1118313231" target=_blank rel=noopener>MLC work</a></td></tr>
+<tr data-t="gmr" data-s="none"><td data-label="Registry"><b>Global Music Rights</b> (performance)</td><td data-label="Status"><span class="pill grey">Not represented</span></td><td data-label="What is on file">No work matched by exact title, songwriter (Chocolate Blanco) or performer (Chocolate Blanco, Ñengo Flow). GMR is invitation-only; absence here is expected and is not a gap.</td><td data-label="Link"><a href="https://globalmusicrights.com/search" target=_blank rel=noopener>GMR search</a></td></tr>
+<tr data-t="songview" data-s="pending"><td data-label="Registry"><b>BMI Songview</b> (BMI + ASCAP performance)</td><td data-label="Status"><span class="pill red">Not registered</span></td><td data-label="What is on file">Title search returns 80 works called Ella Me Llama; none lists Rosa Vazquez, Vargas, Chocolate Blanco or Ñengo Flow. Title plus writer (VAZQUEZ EDWIN ROSA, IPI 489835584) and title plus performer (both artists) each return 0. Chocolate Blanco does appear on other works there — as VARGAS FRANCISCO, affiliation NS, IPI 0 on "Hablame Claro" (BMI 59776913, alongside an SCD writer) and as BLANCO CHOCOLATE, NS, IPI 00000000000 on "Mejor Que Ayer" (ASCAP 25% via CD Baby) — which confirms he holds no U.S. society seat under either name.</td><td data-label="Link"><a href="https://repertoire.bmi.com/" target=_blank rel=noopener>Songview</a></td></tr>
+<tr data-t="scd" data-s="pending"><td data-label="Registry"><b>SCD</b> (Chile, home society)</td><td data-label="Status"><span class="pill blue">Not checked</span></td><td data-label="What is on file">Chocolate Blanco is a Chilean writer, and his BMI co-writer on "Hablame Claro" is an SCD member, so SCD is the likely home society if he has one. SCD data is not visible through U.S. registries; confirmation comes from the writer directly.</td><td data-label="Link">—</td></tr>
 </tbody></table></div>
 
 <div class=grid2>
 <div>
 <h2>Composition record at The MLC</h2><div class=rule></div>
-<div class=tblwrap><table><thead><tr><th>Party</th><th>Role</th><th>IPI</th><th>Share on file</th></tr></thead><tbody>
-<tr><td>Edwin Rosa Vazquez (Ñengo Flow)</td><td>Writer</td><td>00489835584</td><td>via publisher below</td></tr>
-<tr><td>Francisco Vargas (Chocolate Blanco)</td><td>Writer</td><td><span class="pill red">none</span></td><td><span class="pill red">0% · unclaimed</span></td></tr>
-<tr><td>Real G 4 Life Inc</td><td>Original publisher (Ñengo Flow)</td><td>00674817999</td><td>0% direct</td></tr>
-<tr><td>Cinq Songs</td><td>Administrator for Real G 4 Life</td><td>00832201680</td><td><b>50%</b></td></tr>
-<tr><td><b>Vyron Santos</b> (producer)</td><td>Composer of the music</td><td><span class="pill red">none</span></td><td><span class="pill red">not on the work</span></td></tr>
-<tr><td colspan=3><b>Total known shares</b></td><td><b>50%</b></td></tr>
+<div class=tblwrap><table class=stack><thead><tr><th>Party</th><th>Role</th><th>IPI</th><th>Share on file</th></tr></thead><tbody>
+<tr><td data-label="Party">Edwin Rosa Vazquez (Ñengo Flow)</td><td data-label="Role">Writer</td><td data-label="IPI">00489835584</td><td data-label="Share on file">via publisher below</td></tr>
+<tr><td data-label="Party">Francisco Vargas (Chocolate Blanco)</td><td data-label="Role">Writer</td><td data-label="IPI"><span class="pill red">none</span></td><td data-label="Share on file"><span class="pill red">0% · unclaimed</span></td></tr>
+<tr><td data-label="Party">Real G 4 Life Inc</td><td data-label="Role">Original publisher (Ñengo Flow)</td><td data-label="IPI">00674817999</td><td data-label="Share on file">0% direct</td></tr>
+<tr><td data-label="Party">Cinq Songs</td><td data-label="Role">Administrator for Real G 4 Life</td><td data-label="IPI">00832201680</td><td data-label="Share on file"><b>50%</b></td></tr>
+<tr><td data-label="Party"><b>Vyron Santos</b> (producer)</td><td data-label="Role">Composer of the music</td><td data-label="IPI"><span class="pill red">none</span></td><td data-label="Share on file"><span class="pill red">not on the work</span></td></tr>
+<tr><td colspan=3><b>Total known shares</b></td><td data-label="Party"><b>50%</b></td></tr>
 </tbody></table></div>
 </div>
 <div>
 <h2>Recording</h2><div class=rule></div>
-<div class=tblwrap><table><thead><tr><th>Field</th><th>Value</th></tr></thead><tbody>
-<tr><td>Title</td><td>Ella Me Llama</td></tr>
-<tr><td>Artists</td><td>Chocolate Blanco, Ñengo Flow</td></tr>
-<tr><td>ISRC</td><td>UST8K1768870</td></tr>
-<tr><td>Release date</td><td>3 January 2011</td></tr>
-<tr><td>Label</td><td>Nextlevel music</td></tr>
-<tr><td>Duration</td><td>3:13</td></tr>
-<tr><td>Songwriter credit in label metadata</td><td>Chocolate Blanco (stage name only)</td></tr>
-<tr><td>Producer credit in label metadata</td><td><span class="pill red">None</span> — no producer is credited on the DSP listing</td></tr>
-<tr><td>Linked to an MLC work</td><td><span class="pill red">No</span></td></tr>
+<div class=tblwrap><table class=stack><thead><tr><th>Field</th><th>Value</th></tr></thead><tbody>
+<tr><td data-label="Field">Title</td><td data-label="Value">Ella Me Llama</td></tr>
+<tr><td data-label="Field">Artists</td><td data-label="Value">Chocolate Blanco, Ñengo Flow</td></tr>
+<tr><td data-label="Field">ISRC</td><td data-label="Value">UST8K1768870</td></tr>
+<tr><td data-label="Field">Release date</td><td data-label="Value">3 January 2011</td></tr>
+<tr><td data-label="Field">Label</td><td data-label="Value">Nextlevel music</td></tr>
+<tr><td data-label="Field">Duration</td><td data-label="Value">3:13</td></tr>
+<tr><td data-label="Field">Songwriter credit in label metadata</td><td data-label="Value">Chocolate Blanco (stage name only)</td></tr>
+<tr><td data-label="Field">Producer credit in label metadata</td><td data-label="Value"><span class="pill red">None</span> — no producer is credited on the DSP listing</td></tr>
+<tr><td data-label="Field">Linked to an MLC work</td><td data-label="Value"><span class="pill red">No</span></td></tr>
 </tbody></table></div>
 </div>
 </div>
