@@ -1,0 +1,250 @@
+<!doctype html><html lang=en><head><meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<meta name=robots content="noindex,nofollow">
+<title>Ella Me Llama &mdash; Rights Gap Analysis</title>
+<meta property="og:title" content="Ella Me Llama — Rights Gap Analysis">
+<meta property="og:description" content="Publishing &amp; mechanical royalty gap analysis of one composition · prepared by Keyman for Vyron Santos · September 2026">
+<meta property="og:type" content="website"><meta property="og:url" content="https://hunter-sallis.github.io/vyronsantos-rights-analysis/">
+<link rel=preconnect href="https://fonts.googleapis.com"><link rel=preconnect href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Manrope:wght@400;500;600;700&display=swap" rel=stylesheet>
+<style>
+:root{--ink:oklch(0.17 0.008 25);--sub:oklch(0.43 0.012 25);--faint:oklch(0.60 0.010 25);--paper:#fff;--cream:oklch(0.985 0.002 25);--cream2:oklch(0.958 0.006 25);--line:oklch(0.89 0.008 25);
+ --acc:oklch(0.56 0.22 28);--acc-dk:oklch(0.48 0.19 28);--acc-soft:oklch(0.965 0.02 28);--ftr:oklch(0.12 0.008 215);
+ --red:#b3382e;--red-soft:#f8ecea;--amber:#8f5b00;--amber-soft:#faf1dd;--green:#22694a;--green-soft:#e7f2ec;--blue:#2d4f8f;--blue-soft:#e9eef7;--grey:#6b7280;--grey-soft:#f1f2f4}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font:15px/1.6 "Manrope",system-ui,-apple-system,Segoe UI,Arial,sans-serif;-webkit-font-smoothing:antialiased}
+a{color:var(--acc);text-decoration:none;font-weight:600} a:hover{color:var(--acc-dk);text-decoration:underline}
+button{font:inherit;color:inherit}
+:focus-visible{outline:2px solid var(--acc);outline-offset:2px}
+.wrap{max-width:1180px;margin:0 auto;padding:0 28px}
+.hdr{position:sticky;top:0;z-index:30;background:rgba(255,255,255,.97);backdrop-filter:saturate(180%) blur(8px);border-bottom:1px solid var(--line)}
+.hdr .top{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:12px 0 6px}
+.wm{font:500 25px/1 "Cormorant Garamond",Georgia,serif;letter-spacing:.06em;color:var(--acc)}
+.wm-sub{font:700 9px/1 "Manrope",sans-serif;letter-spacing:.26em;text-transform:uppercase;color:var(--sub);margin-top:5px}
+.hdr-r{text-align:right;font:700 9.5px/1.7 "Manrope",sans-serif;letter-spacing:.18em;text-transform:uppercase;color:var(--sub)}
+.badge{display:inline-block;border:1px solid var(--line);color:var(--sub);border-radius:3px;padding:5px 9px;font:700 9px/1 "Manrope",sans-serif;letter-spacing:.16em;text-transform:uppercase;margin-top:4px}
+.navrow{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:4px 0 8px;flex-wrap:wrap}
+.tabs{display:flex;gap:2px}
+.tab{background:none;border:0;border-bottom:2px solid transparent;padding:10px 14px;font:700 11px/1 "Manrope",sans-serif;letter-spacing:.16em;text-transform:uppercase;color:var(--sub);cursor:pointer}
+.tab[aria-selected=true]{color:var(--acc);border-bottom-color:var(--acc)} .tab:hover{color:var(--ink)}
+.navsel{display:none;padding:9px 12px;border:1px solid var(--line);border-radius:4px;font:700 11px/1 "Manrope",sans-serif;letter-spacing:.12em;text-transform:uppercase;background:#fff;color:var(--ink)}
+.seg{display:inline-flex;border:1px solid var(--line);border-radius:4px;overflow:hidden}
+.seg button{background:#fff;border:0;padding:8px 12px;font:700 9.5px/1 "Manrope",sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--sub);cursor:pointer}
+.seg button[aria-pressed=true]{background:var(--ink);color:#fff}
+main{min-height:60vh}
+.panel{display:none;padding:36px 0 64px} .panel.active{display:block}
+.eyebrow{font:700 10px/1 "Manrope",sans-serif;letter-spacing:.23em;text-transform:uppercase;color:var(--acc);margin:0 0 10px}
+h1{font:500 clamp(34px,4.2vw,50px)/1.06 "Cormorant Garamond",Georgia,serif;letter-spacing:-.025em;margin:0}
+h1 small{display:block;font:500 clamp(17px,2vw,22px)/1.3 "Cormorant Garamond",Georgia,serif;letter-spacing:-.01em;color:var(--sub);margin-top:8px}
+h2{font:500 clamp(24px,2.7vw,32px)/1.15 "Cormorant Garamond",Georgia,serif;letter-spacing:-.02em;margin:0}
+h3{font:500 17px/1.3 "Cormorant Garamond",Georgia,serif;margin:0 0 6px;letter-spacing:-.01em}
+.rule{width:52px;height:2px;background:var(--acc);margin:14px 0 18px}
+.sub{color:var(--sub);font-size:14px} .sub b{color:var(--ink);font-weight:600}
+.faint{color:var(--faint)} .sm{font-size:12.5px;color:var(--sub)}
+.hero{display:grid;grid-template-columns:200px 1fr;gap:34px;align-items:center;padding-bottom:28px;border-bottom:1px solid var(--line)}
+.hero img{width:200px;height:200px;object-fit:cover;border-radius:6px;border:1px solid var(--line);display:block}
+.legal{font:500 13.5px/1.5 "Manrope",sans-serif;color:var(--sub);margin-top:12px} .legal b{color:var(--ink);font-weight:600}
+.finding{margin-top:28px;padding:22px 26px;background:var(--cream);border-left:2px solid var(--acc)}
+.finding p{margin:0;font:500 clamp(17px,1.8vw,21px)/1.45 "Cormorant Garamond",Georgia,serif;letter-spacing:-.005em}
+.finding .n{margin-top:10px;font-size:12.5px;color:var(--sub)}
+.kpis{display:grid;grid-template-columns:repeat(5,1fr);border-top:1px solid var(--line);border-bottom:1px solid var(--line);margin-top:28px}
+.kpi{padding:20px 16px;border-left:1px solid var(--line);background:none;border-top:0;border-bottom:0;border-right:0;text-align:left;cursor:pointer;transition:background .12s}
+.kpi:first-child{border-left:0} .kpi:hover{background:var(--cream)}
+.kpi .l{font:700 9px/1.4 "Manrope",sans-serif;letter-spacing:.18em;text-transform:uppercase;color:var(--acc);min-height:26px}
+.kpi .v{font:500 34px/1 "Cormorant Garamond",Georgia,serif;letter-spacing:-.025em;margin:8px 0 6px;font-variant-numeric:tabular-nums}
+.kpi .d{font-size:11.5px;color:var(--sub);line-height:1.45}
+.grid2{display:grid;grid-template-columns:1fr 1.15fr;gap:32px;margin-top:34px}
+.catgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+.cat{display:block;background:#fff;border:1px solid var(--line);border-radius:5px;padding:16px 16px 14px;text-align:left;cursor:pointer;width:100%}
+.cat:hover{border-color:var(--ink)} .cat>span,.cat .bt{display:block}
+.cat .n{font:500 28px/1 "Cormorant Garamond",Georgia,serif;letter-spacing:-.03em;margin-bottom:6px;font-variant-numeric:tabular-nums}
+.cat .t{font-weight:700;font-size:13.5px;line-height:1.3} .cat .d{font-size:11.5px;color:var(--sub);line-height:1.45;margin-top:5px}
+.cat .k{font:700 9px/1 "Manrope",sans-serif;letter-spacing:.18em;color:var(--faint);text-transform:uppercase;margin-right:6px}
+.bt{height:4px;background:var(--grey-soft);margin-top:8px;overflow:hidden;border-radius:2px} .bt i{display:block;height:100%}
+.tone-red .n{color:var(--red)} .tone-amber .n{color:var(--amber)} .tone-blue .n{color:var(--blue)} .tone-green .n{color:var(--green)}
+.bt i.red{background:var(--red)} .bt i.amber{background:var(--amber)} .bt i.blue{background:var(--blue)} .bt i.green{background:var(--green)}
+.expo{display:flex;height:14px;border-radius:3px;overflow:hidden;margin-top:12px;background:var(--grey-soft)} .expo i{display:block;height:100%}
+.legend{display:flex;flex-wrap:wrap;gap:12px 18px;margin-top:10px;font-size:12px;color:var(--sub)} .legend span:before{content:"";display:inline-block;width:9px;height:9px;border-radius:2px;margin-right:6px;vertical-align:-1px;background:var(--grey)}
+.legend .A:before{background:var(--red)} .legend .B:before{background:var(--blue)} .legend .C:before{background:#6d86bf} .legend .D:before{background:var(--amber)} .legend .E:before{background:var(--green)}
+.pill{display:inline-block;font:700 9px/1.4 "Manrope",sans-serif;letter-spacing:.1em;text-transform:uppercase;padding:4px 8px;border-radius:3px;white-space:nowrap}
+.pill.red{color:var(--red);background:var(--red-soft)} .pill.amber{color:var(--amber);background:var(--amber-soft)} .pill.green{color:var(--green);background:var(--green-soft)} .pill.grey{color:var(--grey);background:var(--grey-soft)} .pill.blue{color:var(--blue);background:var(--blue-soft)}
+.pri{display:inline-block;font:700 9px/1.4 "Manrope",sans-serif;letter-spacing:.1em;text-transform:uppercase;padding:4px 8px;border-radius:3px;white-space:nowrap;border:1px solid var(--line);color:var(--sub);background:#fff}
+.pri.p1{border-color:var(--ink);background:var(--ink);color:#fff} .pri.p2{border-color:var(--sub);color:var(--ink)} .pri.p3{color:var(--sub)} .pri.p0{color:var(--green);border-color:var(--green-soft);background:var(--green-soft)}
+.rd{display:inline-block;font:700 9px/1.4 "Manrope",sans-serif;letter-spacing:.08em;text-transform:uppercase;padding:4px 8px;border:1px solid var(--line);border-radius:3px;color:var(--sub);white-space:nowrap;background:#fff}
+.ev{display:inline-block;font:700 8.5px/1.3 "Manrope",sans-serif;letter-spacing:.12em;text-transform:uppercase;padding:3px 6px;border-radius:3px;white-space:nowrap}
+.ev.fact{color:var(--green);background:var(--green-soft)} .ev.gap{color:var(--red);background:var(--red-soft)} .ev.verify{color:var(--amber);background:var(--amber-soft)}
+.dims{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin:10px 0 4px}
+.dim{border:1px solid var(--line);border-radius:5px;padding:10px 12px;background:#fff}
+.dim .dl{font:700 8.5px/1.3 "Manrope",sans-serif;letter-spacing:.16em;text-transform:uppercase;color:var(--sub)}
+.dim .dv{display:inline-block;margin-top:6px;font:700 10px/1.3 "Manrope",sans-serif;letter-spacing:.08em;text-transform:uppercase;padding:4px 8px;border-radius:3px}
+.dim .dn{font-size:11.5px;color:var(--sub);margin-top:6px;line-height:1.4}
+.g{color:var(--green);background:var(--green-soft)} .y{color:var(--amber);background:var(--amber-soft)} .r{color:var(--red);background:var(--red-soft)} .b{color:var(--blue);background:var(--blue-soft)} .n{color:var(--grey);background:var(--grey-soft)}
+.dimline{display:inline-flex;gap:4px;flex-wrap:wrap} .dimline span{font:700 8px/1.2 "Manrope",sans-serif;letter-spacing:.06em;text-transform:uppercase;padding:3px 5px;border-radius:3px;white-space:nowrap}
+.dv.tag{font:700 9px/1.3 "Manrope",sans-serif;letter-spacing:.08em;text-transform:uppercase;padding:3px 6px;border-radius:3px;display:inline-block}
+table{width:100%;border-collapse:collapse}
+th{text-align:left;font:700 9px/1.3 "Manrope",sans-serif;letter-spacing:.18em;text-transform:uppercase;color:var(--sub);padding:10px 10px;border-bottom:1px solid var(--line);background:var(--cream)}
+td{padding:11px 10px;border-bottom:1px solid var(--line);vertical-align:top;font-size:13.5px}
+.num{text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums}
+.tblwrap{overflow-x:auto;border:1px solid var(--line);border-radius:5px}
+tr.click{cursor:pointer} tr.click:hover td{background:var(--cream)}
+#topTbl td:first-child{min-width:170px} #topTbl td.why{color:var(--sub);font-size:12.5px;min-width:220px}
+.acc{border:1px solid var(--line);border-radius:5px;background:#fff;margin-bottom:10px}
+.acc>.ah{display:grid;grid-template-columns:auto 1fr auto auto;gap:14px;align-items:center;width:100%;background:none;border:0;padding:14px 16px;text-align:left;cursor:pointer}
+.acc>.ah:hover{background:var(--cream)} .acc>.ah .car{color:var(--acc);font-size:11px;transition:transform .15s;width:12px}
+.acc[open]>.ah .car{transform:rotate(90deg)} .acc>.ab{display:none;border-top:1px solid var(--line);padding:12px 16px 16px;background:var(--cream)} .acc[open]>.ab{display:block}
+.acc .cnt{font:700 12px/1 "Manrope",sans-serif;letter-spacing:.06em;color:var(--sub);white-space:nowrap;font-variant-numeric:tabular-nums} .acc .cnt b{font:500 18px/1 "Cormorant Garamond",Georgia,serif;color:var(--ink);letter-spacing:-.02em}
+.acc.ok{border-color:var(--green)} .acc.ok>.ah{background:#f5faf7}
+.rows{display:block;border:1px solid var(--line);border-radius:5px;overflow:hidden;background:#fff}
+.row{display:grid;grid-template-columns:1fr auto auto auto;gap:12px;align-items:center;width:100%;padding:11px 14px;border:0;border-top:1px solid var(--line);background:#fff;text-align:left;cursor:pointer}
+.row:first-child{border-top:0} .row:hover{background:var(--cream)}
+.row .t{font-weight:700} .row .a{font-size:12px;color:var(--sub)} .row .p{font-variant-numeric:tabular-nums;color:var(--sub);font-size:13px;min-width:88px;text-align:right} .row .car{color:var(--acc);font-size:11px}
+.tools{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin:16px 0 12px}
+input[type=search],select.f{padding:9px 12px;border:1px solid var(--line);border-radius:4px;font:inherit;font-size:13px;background:#fff;color:var(--ink)}
+input[type=search]{flex:1 1 260px;min-width:200px} input[type=search]:focus{outline:none;border-color:var(--acc)} select.f{max-width:230px}
+.count{font:700 11px/1.4 "Manrope",sans-serif;letter-spacing:.12em;text-transform:uppercase;color:var(--sub);margin:8px 0 10px} .count b{color:var(--ink)}
+.pager{display:flex;gap:6px;align-items:center;justify-content:center;margin-top:14px;flex-wrap:wrap}
+.pager button{background:#fff;border:1px solid var(--line);border-radius:4px;padding:7px 11px;font:700 11px/1 "Manrope",sans-serif;cursor:pointer;color:var(--sub)}
+.pager button[aria-current=true]{background:var(--ink);color:#fff;border-color:var(--ink)} .pager button:disabled{opacity:.4;cursor:default}
+.chip{background:#fff;border:1px solid var(--line);border-radius:4px;padding:7px 11px;font:700 9.5px/1 "Manrope",sans-serif;letter-spacing:.1em;text-transform:uppercase;color:var(--sub);cursor:pointer}
+.chip.s{font:600 11px/1.2 "Manrope",sans-serif;letter-spacing:0;text-transform:none;color:var(--ink);padding:5px 8px}
+.note{border-left:2px solid var(--line);padding:14px 18px;background:var(--cream2);font-size:12.5px;color:var(--sub)} .note b{color:var(--ink)}
+.card{background:#fff;border:1px solid var(--line);border-radius:5px;padding:18px 20px}
+details.m{border:1px solid var(--line);border-radius:5px;padding:12px 16px;background:#fff;font-size:13px;color:var(--sub)} details.m summary{cursor:pointer;font-weight:700;color:var(--ink);font-size:13px} details.m table{margin-top:10px} details.m td{font-size:12.5px;padding:8px 8px} details.m td:first-child{font-weight:700;color:var(--ink);white-space:nowrap}
+.mrem{display:flex;gap:6px;flex-wrap:wrap;margin-top:8px} .mrem span{font:700 9.5px/1 "Manrope",sans-serif;letter-spacing:.06em;padding:6px 8px;border:1px solid var(--line);border-radius:3px;color:var(--sub);background:#fff} .mrem span b{color:var(--ink);letter-spacing:0;margin-left:4px}
+ol.plan{list-style:none;padding:0;margin:0;counter-reset:s}
+ol.plan>li{counter-increment:s;position:relative;padding:0 0 22px 56px;border-bottom:1px solid var(--line);margin-bottom:22px}
+ol.plan>li:before{content:counter(s,decimal-leading-zero);position:absolute;left:0;top:2px;font:500 30px/1 "Cormorant Garamond",Georgia,serif;color:var(--acc);letter-spacing:-.02em}
+ol.plan>li:last-child{border-bottom:0} ol.plan h3{font-size:20px} ol.plan p{margin:6px 0 0;color:var(--sub);font-size:13.5px}
+ol.wf{margin:10px 0 0;padding-left:20px;font-size:13.5px;color:var(--sub)} ol.wf li{margin-bottom:6px;padding-left:4px} ol.wf b{color:var(--ink)}
+ol.find{list-style:none;padding:0;margin:0;counter-reset:f} ol.find li{counter-increment:f;position:relative;padding:0 0 16px 44px;font-size:13.5px;color:var(--sub)} ol.find li b{color:var(--ink)}
+ol.find li:before{content:counter(f,decimal-leading-zero);position:absolute;left:0;top:2px;font:700 11px/1 "Manrope",sans-serif;color:var(--acc)}
+ul.docs{margin:0;padding-left:18px;font-size:13.5px;color:var(--sub)} ul.docs li{margin-bottom:6px}
+.songs{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px} .songs button{background:#fff;border:1px solid var(--line);border-radius:3px;padding:6px 9px;font:600 12px/1.2 "Manrope",sans-serif;color:var(--ink);cursor:pointer;text-align:left} .songs button:hover{border-color:var(--ink)} .songs button span{color:var(--faint);font-weight:500}
+.det h4{font:700 9.5px/1.4 "Manrope",sans-serif;letter-spacing:.18em;text-transform:uppercase;color:var(--acc);margin:20px 0 8px;padding-bottom:5px;border-bottom:1px solid var(--line)} .det h4:first-child{margin-top:0} .det p{margin:0 0 8px;font-size:13.5px}
+.kv{display:grid;grid-template-columns:150px 1fr;gap:5px 12px;font-size:13px} .kv dt{color:var(--sub);font-weight:600} .kv dd{margin:0}
+.work{border-left:2px solid var(--line);padding-left:12px;margin:10px 0} .wt{font:500 15px/1.3 "Cormorant Garamond",Georgia,serif} .wp{margin:4px 0 0;padding-left:18px;font-size:12.5px;color:var(--sub)}
+.flag{font:700 8.5px/1 "Manrope",sans-serif;letter-spacing:.1em;text-transform:uppercase;color:var(--green);background:var(--green-soft);padding:4px 6px;border-radius:3px;margin-left:5px;display:inline-block} .flag.off{color:var(--red);background:var(--red-soft)} .flag.neu{color:var(--sub);background:var(--grey-soft)} .flag.amb{color:var(--amber);background:var(--amber-soft)}
+.mine{font:700 8.5px/1 "Manrope",sans-serif;letter-spacing:.08em;text-transform:uppercase;color:var(--green);background:var(--green-soft);padding:3px 5px;border-radius:3px}
+.evrow{border:1px solid var(--line);border-radius:5px;padding:9px 12px;font-size:12.5px;margin-top:6px;background:#fff} .evrow b{color:var(--ink)} .evrow .src{color:var(--sub);margin-top:3px}
+.flags li{margin-bottom:6px;font-size:13px}
+details.evd summary{cursor:pointer;font-weight:700;font-size:13px;color:var(--acc)} details.evd ul{padding-left:18px;font-size:12.5px;color:var(--sub)}
+.drawer{position:fixed;top:0;right:0;height:100%;width:min(680px,100%);background:#fff;border-left:1px solid var(--line);box-shadow:-12px 0 32px rgba(11,18,32,.12);transform:translateX(102%);transition:transform .2s;z-index:50;display:flex;flex-direction:column}
+.drawer.open{transform:none} .drawer .dh{display:flex;justify-content:space-between;align-items:flex-start;gap:12px;padding:16px 20px;border-bottom:1px solid var(--line)} .drawer .db{overflow:auto;padding:16px 20px 40px}
+.x{background:none;border:1px solid var(--line);border-radius:4px;padding:6px 10px;cursor:pointer;font-weight:700}
+.scrim{position:fixed;inset:0;background:rgba(11,18,32,.3);z-index:40;display:none} .scrim.on{display:block}
+.tech{display:none} body.mode-tech .tech{display:initial} body.mode-tech dl.tech,body.mode-tech div.tech,body.mode-tech section.tech,body.mode-tech li.tech,body.mode-tech p.tech,body.mode-tech details.tech{display:block} body.mode-tech span.tech{display:inline} body.mode-tech th.tech,body.mode-tech td.tech{display:table-cell} body.mode-tech select.tech,body.mode-tech button.tech{display:inline-block}
+body.mode-tech .exec-only{display:none}
+footer{background:var(--ftr);color:#c9ced8;padding:34px 0} footer .wm{color:#fff} footer .wm-sub{color:#9aa3b2} footer .fs{font-size:12px;color:#9aa3b2;max-width:900px;margin-top:14px;line-height:1.6}
+.hide{display:none!important}
+@media(max-width:1000px){.catgrid{grid-template-columns:repeat(3,1fr)} .kpis{grid-template-columns:repeat(3,1fr)} .kpi:nth-child(3n+1){border-left:0} .kpi:nth-child(n+4){border-top:1px solid var(--line)} .grid2{grid-template-columns:1fr} .dims{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:700px){.catgrid{grid-template-columns:1fr} .tabs{display:none} .navsel{display:block} .kpis{grid-template-columns:repeat(2,1fr)} .kpi:nth-child(3n+1){border-left:1px solid var(--line)} .kpi:nth-child(2n+1){border-left:0} .kpi:nth-child(n+3){border-top:1px solid var(--line)}
+ .hero{grid-template-columns:1fr} .hero img{width:120px;height:120px} .hdr .top{flex-direction:column;align-items:flex-start;gap:6px} .hdr-r{text-align:left} .row{grid-template-columns:1fr auto} .row .pri,.row .rd{display:none} .row .p{min-width:0}
+ .acc>.ah{grid-template-columns:auto 1fr auto} .acc>.ah .cnt2{display:none} .kv{grid-template-columns:1fr} .kv dt{margin-top:6px} th,td{font-size:12.5px;padding:8px} .drawer{width:100%} .dims{grid-template-columns:1fr} ol.plan>li{padding-left:44px}}
+@media print{.hdr,.drawer,.scrim,.tools,.pager,footer{display:none!important} .panel{display:block!important;page-break-after:always} body{font-size:12px} a{color:inherit}}
+
+.kpis{grid-template-columns:repeat(4,1fr)}
+.book{margin-top:44px;padding:30px 34px;background:var(--cream);border-left:2px solid var(--acc)}
+.book h3{font:500 24px/1.2 "Cormorant Garamond",Georgia,serif;margin:0 0 8px}
+.book p{margin:0;color:var(--sub);font-size:13.5px;line-height:1.6;max-width:640px}
+.book .btn{display:inline-block;margin-top:18px;background:var(--acc);color:#fff;padding:14px 28px;border-radius:4px;font:700 11px/1 "Manrope",sans-serif;letter-spacing:.16em;text-transform:uppercase}
+.book .btn:hover{background:var(--acc-dk);color:#fff;text-decoration:none}
+.book .fine{margin-top:12px;font-size:11.5px;color:var(--faint)}
+.joinlinks{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.joinlinks a{display:inline-block;border:1px solid var(--line);border-radius:4px;padding:10px 14px;font:700 10px/1.1 "Manrope",sans-serif;letter-spacing:.1em;text-transform:uppercase;color:var(--acc);background:#fff}
+.joinlinks a:hover{border-color:var(--acc);background:var(--acc-soft);color:var(--acc-dk);text-decoration:none}
+.fnd .ah{width:100%} .fnd .fh{font-weight:700;font-size:14px;line-height:1.4}
+.fnd .fmore{font:700 9px/1 "Manrope",sans-serif;letter-spacing:.16em;text-transform:uppercase;color:var(--faint)}
+.fnd[open] .fmore{visibility:hidden}
+@media(max-width:700px){.fnd .fmore{display:none}}
+@media(max-width:900px){.kpis{grid-template-columns:repeat(2,1fr)}.hero{grid-template-columns:1fr}.hero img{width:150px;height:150px}}
+</style></head><body>
+<header class=hdr><div class="wrap top">
+<div><div class=wm>KEYMAN</div><div class=wm-sub>Publishing Administration</div></div>
+<div class=hdr-r>Rights Gap Analysis<br><span class=badge>Draft &middot; 2026-09-08</span></div>
+</div></header>
+<main class=wrap>
+<section class=panel style="display:block">
+<div class=hero>
+<img src="hero.jpg" alt="Chocolate Blanco">
+<div><p class=eyebrow>Prepared by Keyman for Vyron Santos</p>
+<h1>Ella Me Llama<small>Publishing &amp; mechanical rights gap analysis — one composition · Chocolate Blanco feat. Ñengo Flow · released 3 January 2011</small></h1>
+<div class=rule></div>
+<p class=legal>Writer of interest: <b>Chocolate Blanco</b> (legal name in registry data: <b>Francisco Vargas</b>) · Co-writer: <b>Ñengo Flow</b> (Edwin Rosa Vazquez) · Label: <b>Nextlevel music</b> · ISRC <b>UST8K1768870</b> · Sources: The MLC public search, Global Music Rights catalog search, DSP release metadata. Registry data as at 2026-09-08.</p>
+</div></div>
+
+<div class=finding><p>The composition is registered at The MLC, but only Ñengo Flow's half is claimed. Chocolate Blanco's 50% writer share has no publisher or administrator attached to it, and the commercial recording is not linked to the work — so nothing on this song is currently being paid on that ISRC, including the half that is claimed.</p>
+<div class=n>Registry status describes who is on file to be paid, not payment itself. Performance-society (BMI/ASCAP) data has not yet been pulled for this song and is marked pending below.</div></div>
+
+<div class=kpis style="grid-template-columns:repeat(5,1fr)">
+<div class=kpi><div class=l>MLC works found</div><div class=v>1</div><div class=d>song code EC7XZB · single registration, no duplicate</div></div>
+<div class=kpi><div class=l>Shares claimed</div><div class=v style="color:var(--amber)">50%</div><div class=d>Ñengo Flow's half via Real G 4 Life Inc / Cinq Songs</div></div>
+<div class=kpi><div class=l>Shares unclaimed</div><div class=v style="color:var(--red)">50%</div><div class=d>Chocolate Blanco's writer seat · no publisher, no IPI</div></div>
+<div class=kpi><div class=l>Recordings linked</div><div class=v style="color:var(--red)">0 of 1</div><div class=d>ISRC UST8K1768870 returns no MLC work</div></div>
+<div class=kpi><div class=l>GMR</div><div class=v>0</div><div class=d>no matching work by title, writer or performer</div></div>
+</div>
+
+<h2 style="margin-top:44px">Registry ledger</h2><div class=rule></div>
+<p class=sub style="max-width:760px">One line per registry, following the three-layer reading: a society lists who wrote the song, The MLC records who is on file to be paid, and only an account statement shows money.</p>
+<div class=tblwrap><table id=tbl><thead><tr><th>Registry</th><th>Status</th><th>What is on file</th><th>Link</th></tr></thead><tbody>
+<tr data-t="mlc" data-s="partial"><td><b>The MLC</b> (U.S. mechanicals)</td><td><span class="pill amber">Partially claimed</span></td><td>Work <b>ELLA ME LLAMA</b>, song code EC7XZB. Writers: Edwin Rosa Vazquez (IPI 00489835584) and Francisco Vargas (no IPI). Publisher Real G 4 Life Inc, administered by Cinq Songs, 50%. Total known shares 50%. Matched recordings: 0. ISWC: none.</td><td><a href="https://portal.themlc.com/catalog/work/1118313231" target=_blank rel=noopener>MLC work</a></td></tr>
+<tr data-t="gmr" data-s="none"><td><b>Global Music Rights</b> (performance)</td><td><span class="pill grey">Not represented</span></td><td>No work matched by exact title, songwriter (Chocolate Blanco) or performer (Chocolate Blanco, Ñengo Flow). GMR is invitation-only; absence here is expected and is not a gap.</td><td><a href="https://globalmusicrights.com/search" target=_blank rel=noopener>GMR search</a></td></tr>
+<tr data-t="songview" data-s="pending"><td><b>BMI Songview</b> (BMI + ASCAP performance)</td><td><span class="pill blue">Pending</span></td><td>Not yet pulled. Songview is session-gated; a title-plus-writer lookup on ROSA VAZQUEZ EDWIN and VARGAS FRANCISCO will show the performance-side split and whether Chocolate Blanco holds any U.S. society seat.</td><td><a href="https://repertoire.bmi.com/" target=_blank rel=noopener>Songview</a></td></tr>
+<tr data-t="scd" data-s="pending"><td><b>SCD</b> (Chile, home society)</td><td><span class="pill blue">Not checked</span></td><td>Chocolate Blanco is a Chilean writer. If he is affiliated anywhere it is most likely SCD, which is not visible through U.S. registries. Confirmation comes from the writer directly.</td><td>—</td></tr>
+</tbody></table></div>
+
+<div class=grid2>
+<div>
+<h2>Composition record at The MLC</h2><div class=rule></div>
+<div class=tblwrap><table><thead><tr><th>Party</th><th>Role</th><th>IPI</th><th>Share on file</th></tr></thead><tbody>
+<tr><td>Edwin Rosa Vazquez (Ñengo Flow)</td><td>Writer</td><td>00489835584</td><td>via publisher below</td></tr>
+<tr><td>Francisco Vargas (Chocolate Blanco)</td><td>Writer</td><td><span class="pill red">none</span></td><td><span class="pill red">0% · unclaimed</span></td></tr>
+<tr><td>Real G 4 Life Inc</td><td>Original publisher (Ñengo Flow)</td><td>00674817999</td><td>0% direct</td></tr>
+<tr><td>Cinq Songs</td><td>Administrator for Real G 4 Life</td><td>00832201680</td><td><b>50%</b></td></tr>
+<tr><td colspan=3><b>Total known shares</b></td><td><b>50%</b></td></tr>
+</tbody></table></div>
+</div>
+<div>
+<h2>Recording</h2><div class=rule></div>
+<div class=tblwrap><table><thead><tr><th>Field</th><th>Value</th></tr></thead><tbody>
+<tr><td>Title</td><td>Ella Me Llama</td></tr>
+<tr><td>Artists</td><td>Chocolate Blanco, Ñengo Flow</td></tr>
+<tr><td>ISRC</td><td>UST8K1768870</td></tr>
+<tr><td>Release date</td><td>3 January 2011</td></tr>
+<tr><td>Label</td><td>Nextlevel music</td></tr>
+<tr><td>Duration</td><td>3:13</td></tr>
+<tr><td>Songwriter credit in label metadata</td><td>Chocolate Blanco (stage name only)</td></tr>
+<tr><td>Linked to an MLC work</td><td><span class="pill red">No</span></td></tr>
+</tbody></table></div>
+</div>
+</div>
+
+<h2 style="margin-top:44px">Key findings</h2><div class=rule></div>
+<div class=tools style="justify-content:space-between;align-items:center">
+<span class=count style="margin:0"><b>5</b> findings &middot; select one to read it</span>
+<span><button class=chip type=button id=fExpand>Expand all</button> <button class=chip type=button id=fCollapse>Collapse all</button></span>
+</div>
+<div class="acc fnd" open><button class="ah" type="button" aria-expanded="true"><span class="car">▸</span><span class="fh">Chocolate Blanco's half of the song is on file but unclaimed.</span><span class="pill red">01</span><span class="fmore">Read</span></button><div class="ab"><p style="margin:0;font-size:13.5px;color:var(--sub);line-height:1.65">The MLC work names Francisco Vargas as a writer, so the registry already knows he co-wrote it. But no publisher or administrator is attached to his seat, and the writer record carries no IPI number. The MLC pays publishers, not writers, so a writer seat with nothing attached to it is a share that accrues to the unclaimed pool. Ñengo Flow's side, by contrast, is fully wired: Real G 4 Life Inc as original publisher, Cinq Songs as administrator, 50% on file.</p></div></div>
+<div class="acc fnd"><button class="ah" type="button" aria-expanded="false"><span class="car">▸</span><span class="fh">The recording is not linked to the work, so even the claimed half is not paying on this ISRC.</span><span class="pill red">02</span><span class="fmore">Read</span></button><div class="ab"><p style="margin:0;font-size:13.5px;color:var(--sub);line-height:1.65">A search on ISRC UST8K1768870 returns no work at all, and the work itself shows zero matched recordings. The MLC pays against recordings that are matched to a work; an unmatched recording earns for nobody, including the publisher that has already claimed. This is a linkage problem rather than a registration problem, and it is the cheaper of the two to fix.</p></div></div>
+<div class="acc fnd"><button class="ah" type="button" aria-expanded="false"><span class="car">▸</span><span class="fh">The writer record for Francisco Vargas is a shared name bucket, not a verified identity.</span><span class="pill amber">03</span><span class="fmore">Read</span></button><div class="ab"><p style="margin:0;font-size:13.5px;color:var(--sub);line-height:1.65">The MLC writer record that sits on this work (nine works in total) also carries a Mexican regional writer's compositions from the EMI catalog and an unrelated Spanish rap credit. That is what happens when a writer is registered by name with no IPI. Any claim on Chocolate Blanco's behalf should attach to a writer identity with an IPI, so his share cannot be confused with a namesake's.</p></div></div>
+<div class="acc fnd"><button class="ah" type="button" aria-expanded="false"><span class="car">▸</span><span class="fh">The writer does register elsewhere, which shows a working rail exists.</span><span class="pill green">04</span><span class="fmore">Read</span></button><div class="ab"><p style="margin:0;font-size:13.5px;color:var(--sub);line-height:1.65">Two other Chocolate Blanco compositions are on file at The MLC with claims attached: "Mejor Que Ayer" (2016) carries a 25% CD Baby claim, and "A Ella Le Gusta Rough" carries 50% through Champion Sound Publisher, administered by Mayimba Music. Both are registered under the stage name with no IPI. The CD Baby rail in particular could be used to claim Ella Me Llama today without any new registration.</p></div></div>
+<div class="acc fnd"><button class="ah" type="button" aria-expanded="false"><span class="car">▸</span><span class="fh">Performance-side status is still open.</span><span class="pill blue">05</span><span class="fmore">Read</span></button><div class="ab"><p style="margin:0;font-size:13.5px;color:var(--sub);line-height:1.65">Global Music Rights has no record, which is expected for a song of this profile. BMI and ASCAP have not yet been checked for this title; that lookup will show the performance split, Ñengo Flow's society, and whether Chocolate Blanco holds a U.S. society seat at all. His home society, if any, is more likely SCD in Chile, which only the writer can confirm.</p></div></div>
+
+<h2 style="margin-top:44px">Recommended next steps</h2><div class=rule></div>
+<ol class=plan>
+<li><h3>Confirm the writer identity and get an IPI on the seat</h3><p>Establish whether Chocolate Blanco already holds an IPI through SCD or any other society. If he does, the claim attaches to that number. If he does not, the fastest route is a U.S. society application under the <b>Writer &amp; Publisher</b> option, after confirming he is not already affiliated abroad.</p></li>
+<li><h3>Claim the open 50% at The MLC</h3><p>Attach a publisher or administrator to Francisco Vargas's writer seat on work EC7XZB. Because the work already exists, this is a claim on an existing record rather than a new registration, and it requires evidence of the split — a split sheet, the original agreement with Ñengo Flow's camp, or written confirmation from Real G 4 Life / Cinq Songs.</p></li>
+<li><h3>Link the recording</h3><p>Submit ISRC UST8K1768870 against EC7XZB so the recording matches the work. This unlocks payment on both halves, and it is the step with the fastest effect on money already accruing.</p></li>
+<li><h3>Pull the BMI/ASCAP record</h3><p>One Songview lookup completes the picture on the performance side and tells us whether a society registration also needs to be made.</p></li>
+<li><h3>Fix the label metadata going forward</h3><p>The recording carries "Chocolate Blanco" as its only songwriter string. Legal names and IPIs in distributor metadata are what allow registries to match automatically; correcting this prevents the same gap on re-releases and future work.</p></li>
+</ol>
+
+<div class=note style="margin-top:34px"><b>Basis and limits.</b> This is a draft analysis prepared from public registry and DSP data for a single composition. It establishes what is registered, what is claimed, and what is attributable. It does not and cannot establish actual payment or royalty flow, which is visible only inside a society or MLC account. No filing, amendment or claim has been made at any registry on anyone's behalf, and none will be without instruction. Keyman Publishing LLC · admin@keymanpublishing.com</div>
+</section></main>
+<script>
+function fset(a,v){const b=a.querySelector('.ah');if(v){a.setAttribute('open','');b.setAttribute('aria-expanded','true');}else{a.removeAttribute('open');b.setAttribute('aria-expanded','false');}}
+document.querySelectorAll('.fnd .ah').forEach(b=>b.addEventListener('click',()=>fset(b.parentElement,!b.parentElement.hasAttribute('open'))));
+const fAll=v=>document.querySelectorAll('.fnd').forEach(a=>fset(a,v));
+document.getElementById('fExpand').onclick=()=>fAll(true);
+document.getElementById('fCollapse').onclick=()=>fAll(false);
+</script></body></html>
